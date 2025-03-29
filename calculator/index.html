@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet">
 </head>
 <body>
+    
     <section>
         <div class="container">
             <div id="display"></div>
             <div class="buttons">
+                <div class="button" id="tempButton">Temperature</div>
+                <div id="tempOptions" style="display: none;">
+                    <div class="button" onclick="convertCtoF()">C -> F</div>
+                    <div class="button" onclick="convertFtoC()">F -> C</div>
+                </div>
+                <div class="button">&radic;</div>
+                <div class="button"></div>
+                <div class="button"></div>
                 <div class="button">C</div>
                 <div class="button">/</div>
-                <div class="button">*</div>
-                <div class="button">&larr;</div>
+                <div class="button"><i class='bx bxs-tag-x' ></i></div>
+                <div class="button"><i class='bx bx-x' ></i></div>
                 <div class="button">7</div>
                 <div class="button">8</div>
                 <div class="button">9</div>
